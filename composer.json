@@ -1,8 +1,8 @@
 {
     "name": "laravel/laravel",
     "type": "project",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "description": "Test task for Cloud Care.",
+    "keywords": ["framework", "laravel", "cloudcare"],
     "license": "MIT",
     "require": {
         "php": "^8.0.2",

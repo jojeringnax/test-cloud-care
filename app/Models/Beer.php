@@ -4,7 +4,6 @@ namespace App\Models;
 
 use App\Http\Responses\PunkAPIResponse;
 use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\Log;
 
 /**
  * @property
@@ -17,9 +16,7 @@ class Beer
     public function __construct(
         private ?PunkAPIResponse $punkAPIResponse = null
     )
-    {
-
-    }
+    {}
 
     /**
      * @param PunkAPIResponse $punkAPIResponse

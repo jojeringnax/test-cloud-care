@@ -3,8 +3,7 @@ version: '3'
 services:
     laravel.test:
         build:
-            context: ./vendor/laravel/sail/runtimes/8.1
-            dockerfile: Dockerfile
+            context: .
             args:
                 WWWGROUP: '${WWWGROUP}'
         image: sail-8.1/app
@@ -21,8 +20,10 @@ services:
             - '.:/var/www/html'
         networks:
             - sail
+        entrypoint: "./start-container"
         depends_on:
-            - mysql
+            mysql:
+                condition: service_healthy
     mysql:
         image: 'mysql/mysql-server:8.0'
         ports:
