@@ -1,0 +1,43 @@
+table#dashboard-table {
+  width: 100%;
+}
+table#dashboard-table thead tr th {
+  text-align: left;
+}
+table#dashboard-table button {
+  background: #688af1;
+  padding: 1px 4px;
+  border-radius: 4px;
+  font-size: 11px;
+}
+table#dashboard-table button:hover {
+  background: #4d84fa;
+}
+table#dashboard-table button:active {
+  background: #2563eb;
+}
+table#dashboard-table button a {
+  color: white;
+}
+
+button[disabled] {
+  pointer-events: none;
+}
+button[disabled] a svg {
+  fill: grey;
+}
+
+.paginator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 10px 14px 20px 14px;
+}
+.paginator .buttons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/*# sourceMappingURL=dashboard.css.map */
